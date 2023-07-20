@@ -32,7 +32,7 @@
       };
       
       try {
-        const response = await fetch('http://localhost:5000/api/user2', {
+        const response = await fetch('/api/user2', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'

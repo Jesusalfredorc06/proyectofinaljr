@@ -1,7 +1,7 @@
 function verPedidos() {
 
 
-    fetch(`http://localhost:5000/api/contacto`)
+    fetch(`/api/contacto`)
     .then(response => response.json())
     .then(data => {
         crear(data)
@@ -35,7 +35,7 @@ function verPedidos() {
 function eliminarPedido(pedidoid){
     // Hacer una solicitud al backend para eliminar el pedido
     console.log(pedidoid)
-    fetch(`http://localhost:5000/api/contacto/${pedidoid}`, { method: 'DELETE' }) // Ruta en el backend que maneja la eliminación del pedido
+    fetch(`/api/contacto/${pedidoid}`, { method: 'DELETE' }) // Ruta en el backend que maneja la eliminación del pedido
         .then(response => response.json())
         .then(() => {
             console.log('Pedido eliminado exitosamente');
