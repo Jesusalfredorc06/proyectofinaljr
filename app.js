@@ -46,7 +46,7 @@ mongoose.connect(process.env.MONGO_URI_TEST)
 
 
 //rutas front 
-app.use('/',express.static(path.resolve('views','home')));
+app.use('/',express.static(path.resolve('views','Home')));
 app.use('/contacto',express.static(path.resolve('views','contacto')));
 app.use('/registro',express.static(path.resolve('views','registro')));
 app.use('/login',express.static(path.resolve('views','login')));
