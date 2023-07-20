@@ -1,0 +1,13 @@
+###
+POST http://localhost:5000/api/contacto HTTP/1.1
+Content-Type: application/json
+
+{
+    "asunto": "Nesesario",
+    "correo": "calosdrichar@gmail.com",
+    "mensaje": "Mensaje2",
+    "nombre": "TR-Generador"
+}
+
+###
+GET http://localhost:5000/api/contacto HTTP/1.1

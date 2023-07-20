@@ -1,0 +1,44 @@
+{
+    "Formulario":[
+        {
+            "id":1,
+            "nombre": " "
+        },
+        {
+            "id":2,
+            "apellido": " "
+        },
+        {
+            "id":3,
+            "correo": " "
+        },
+        {
+            "id":4,
+            "telefono": " "
+        },
+        {
+            "id":5,
+            "sexo": " "
+        },
+        {
+            "id":6,
+            "nacimiento": " "
+        },
+        {
+            "id":7,
+            "direccion": " "
+        },
+        {
+            "id":8,
+            "ciudad": " "
+        },
+        {
+            "id":9,
+            "estado": " "
+        },
+        {
+            "id":10,
+            "motivo": " "
+        }
+    ]
+}

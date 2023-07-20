@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portal Ginécologico</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/css/img/fotosreymar/thumbnail_reymar logo6.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+  <!-- CSS Files -->
+  <link href="/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/css/boxicons/css/boxicons.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/css/style.css" rel="stylesheet">
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+
+<!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope"></i> <a href="mailto:Ramyer1504@hotmail.com">Ramyer1504@hotmail.com</a>
+        <i class="bi bi-phone"></i><a href="https://api.whatsapp.com/send?phone=584128532761">0414-5864121</a>
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="#" class="tiktok"><i class="bi bi-tiktok"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=584128532761" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.instagram.com/drarrojas_/" class="instagram"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+<!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+       <a href="/index.html" class="logo me-auto"><img src="/css/img/fotosreymar/thumbnail_reymar logo1.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="/index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="/contacto">Contacto</a></li>
+          <li><a class="nav-link scrollto" href="#">Horarios</a></li>
+          <li><a class="nav-link scrollto" href="/login">Admin</a></li>
+          
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="/nuevacita" class="appointment-btn scrollto"><span class="d-none d-md-inline">Generar Cita</span></a>
+
+    </div>
+  </header>
+<!-- End Header -->
+
+<!-- ======= Form ======= -->
+
+<section class="d-flex justify-content-center">
+<div class="formulario">
+    <div class="card col-sm-6 p-3">
+        <div class="mb-3"> 
+            <h4>Datos del Paciente</h4>
+        </div>
+        <div class="form">
+            <form action="" id="formulario">
+             <div class="mb-2">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingresa tú nombre">
+            </div>
+
+            <div class="mb-2">
+                <label for="apellido">Apellido</label>
+                <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Ingresa tú apellido">
+            </div>
+
+            <div class="mb-2">
+                <label for="correo">Correo Eléctronico</label>
+                <input type="email" class="form-control" name="correo" id="correo" placeholder="Ingresa tú correo">
+            </div>
+
+            <div class="mb-2">
+                <label for="telefono">Teléfono</label>
+                <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Ingresa tú telefono">
+            </div>
+
+            <div class="mb-2">
+                <label for="nacimiento">Fecha de Nacimiento</label>
+                <input type="text" class="form-control" name="nacimiento" id="nacimiento" placeholder="dd/mm/aaaa">
+            </div>
+
+            <div class="mb-2">
+                <label for="direccion">Dirección</label>
+                <input type="text" class="form-control" name="direccion" id="direccion" placeholder="Ingresa tú Dirección">
+            </div>
+
+            <div class="row g-3">
+                <div class="col-sm-7">
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" class="form-control" name="ciudad" id="ciudad" placeholder="Ciudad" aria-label="City">
+                </div>
+                <div class="col-sm">
+                    <Label for="estado">Estado</Label>
+                    <input type="text" class="form-control" name="estado" id="estado" placeholder="Estado" aria-label="State">
+                </div>
+              </div>
+
+            <div class="mb-2">
+              <label for="fecha">Fecha de la Cita</label>
+              <input type="date" class="form-control" name="fecha" id="fecha">
+            </div>
+
+            <div class="mb-2">
+              <label for="hora">Hora de la Cita</label>
+              <input type="time" class="form-control" name="hora" id="hora">
+            </div>
+
+            <div class="mb-2">
+              <label for="mensaje">Motivo de Consulta</label>
+              <textarea name="mensaje" id="mensaje" class="form-control" placeholder=""></textarea>
+            </div>
+
+          <button type="submit" class="btn btn-primary" id="guardar-formulario">Guardar</button>
+            
+          </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</section>
+   
+
+
+
+
+
+
+
+
+
+
+
+<!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Dra. Reymar Rojas</h3>
+            <p>
+              Centro de Maracay <br>
+              Calle Vargas, Edif. Santa Cruz<br>
+              Maracay, Aragua <br><br>
+              <strong>Teléfono:</strong> 04145864121<br>
+              <strong>Email:</strong>Ramyer1504@otmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="/index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Horarios</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="login.html">Admin</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <div class="footer-logo">
+              <img src="/css/img/fotosreymar/thumbnail_reymar logo.png" alt="">
+            </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Jesus A. Rojas</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Diseño de Jesus A. Rojas
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="tiktok"><i class="bx bxl-tiktok"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=584128532761" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+        <a href="https://www.instagram.com/drarrojas_/" class="instagram"><i class="bx bxl-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+<!-- End Footer -->
+
+<script src="/formulario/index.js"></script>
+</body>
+
+</html>
